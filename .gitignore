@@ -1,0 +1,25 @@
+# MkDocs build output
+/site/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.py.class
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# VSCode settings
+.vscode/
+*.code-workspace
+
+# Jupyter checkpoints (if you add notebooks later)
+.ipynb_checkpoints
+
+# System files
+.DS_Store
+Thumbs.db

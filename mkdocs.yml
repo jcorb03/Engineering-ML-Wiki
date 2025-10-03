@@ -1,0 +1,76 @@
+site_name: Engineering ML Wiki
+site_url: https://mlforengineeringwiki
+
+theme:
+  name: material
+  logo: assets/MLEngLogo.png
+  favicon: assets/corbaero.png
+  features:
+    - navigation.instant
+    - navigation.footer
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    - scheme: slate
+      primary: green
+      accent: deep purple
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.caret
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/your-repo
+
+
+
+nav:
+  - Home: 
+      - Home: home_pages/index.md
+      - About: home_pages/about.md
+  - Code:
+      - Real Code: code-examples.md
+      - Diagram: diagrams.md
+  - Methods:
+      - Linear Regression: linear-regression.md
+
+
+
+plugins:
+  - search
+  - tags
+
+
+
+      
