@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://jcorb03.github.io/Engineering-ML-Wiki/home_pages/tags/">
+        <link rel="canonical" href="https://jcorb03.github.io/Engineering-ML-Wiki/getting-started/essence-of-ML/">
       
       
+        <link rel="prev" href="../what-is-ML/">
+      
+      
+        <link rel="next" href="../../code-examples/">
       
       
       <link rel="icon" href="../../assets/corbaero.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>Tags - Engineering ML Wiki</title>
+        <title>An overview - Engineering ML Wiki</title>
       
     
     
@@ -68,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tags" class="md-skip">
+        <a href="#the-essence-of-ml" class="md-skip">
           Skip to content
         </a>
       
@@ -103,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Tags
+              An overview
             
           </span>
         </div>
@@ -172,7 +176,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../" class="md-tabs__link">
+        <a href="../../home_pages/" class="md-tabs__link">
           
   
   
@@ -188,11 +192,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../getting-started/what-is-ML/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../what-is-ML/" class="md-tabs__link">
           
   
   
@@ -334,7 +340,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../home_pages/" class="md-nav__link">
         
   
   
@@ -357,7 +363,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../about/" class="md-nav__link">
+      <a href="../../home_pages/about/" class="md-nav__link">
         
   
   
@@ -380,7 +386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../join-the-team/" class="md-nav__link">
+      <a href="../../home_pages/join-the-team/" class="md-nav__link">
         
   
   
@@ -407,28 +413,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -441,7 +450,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Getting Started
@@ -455,7 +464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/what-is-ML/" class="md-nav__link">
+      <a href="../what-is-ML/" class="md-nav__link">
         
   
   
@@ -475,10 +484,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../getting-started/essence-of-ML/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -489,6 +507,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -710,9 +729,32 @@
 
 
 
-<h1 id="tags">Tags<a class="headerlink" href="#tags" title="Permanent link">&para;</a></h1>
-<p>My tags</p>
-
+<h1 id="the-essence-of-ml">The essence of ML<a class="headerlink" href="#the-essence-of-ml" title="Permanent link">&para;</a></h1>
+<p>Let's begin with linear regression - finding linear relationships between two variables, take for example a linear stress-strain relationship defined by:</p>
+<div class="arithmatex">\[
+\sigma = E \, \varepsilon
+\]</div>
+<p>However, in practice sensors provide some inaccuracy, giving noisy measurements about the true relatonship shown here:</p>
+<p><img alt="Steel Elastic Deformation" src="../image-1.png" /></p>
+<p>Now, if we wanted to determine the true Elastic Modulus E from this data (the gradient), a common approach would be to use linear regression. Given the line formula <span class="arithmatex">\( y = mx + c \)</span>, we can then go about determining constants m and c which minimise the error to experimental results using Mean Squared Error</p>
+<div class="arithmatex">\[
+\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} \left( y_i - (m x_i + c) \right)^2
+\]</div>
+<p>This effectively determines the determines the squared difference between the experimental result <span class="arithmatex">\( y_i \)</span> and our model formula <span class="arithmatex">\( \hat{y}_i = m x_i + c \)</span> at each data point <span class="arithmatex">\( i \)</span>. This error function then can be used to determine the accuracy of the model.</p>
+<p>Taking derivatives of the model, gives the gradient response to incremental changes in parameters </p>
+<div class="arithmatex">\[
+\frac{\partial L}{\partial m} = -\frac{2}{N} \sum_{i=1}^{N} x_i (y_i - \hat{y}_i)
+\]</div>
+<div class="arithmatex">\[
+\frac{\partial L}{\partial c} = -\frac{2}{N} \sum_{i=1}^{N} (y_i - \hat{y}_i)
+\]</div>
+<p>Then going down the gradient (negative direction) gives us an incremental update for our parameters which will take us to  our solution.</p>
+<div class="arithmatex">\[
+m \leftarrow m - \eta \frac{\partial L}{\partial m}
+\]</div>
+<div class="arithmatex">\[
+c \leftarrow c - \eta \frac{\partial L}{\partial c}
+\]</div>
 
 
 
@@ -737,6 +779,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../what-is-ML/" class="md-footer__link md-footer__link--prev" aria-label="Previous: What is ML?">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                What is ML?
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../code-examples/" class="md-footer__link md-footer__link--next" aria-label="Next: Real Code">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Real Code
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
