@@ -2,38 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://jcorb03.github.io/Engineering-ML-Wiki/code-examples/</loc>
-         <lastmod>2025-10-06</lastmod>
+         <lastmod>2025-10-10</lastmod>
     </url>
     <url>
          <loc>https://jcorb03.github.io/Engineering-ML-Wiki/diagrams/</loc>
-         <lastmod>2025-10-06</lastmod>
+         <lastmod>2025-10-10</lastmod>
     </url>
     <url>
          <loc>https://jcorb03.github.io/Engineering-ML-Wiki/linear-regression/</loc>
-         <lastmod>2025-10-06</lastmod>
+         <lastmod>2025-10-10</lastmod>
     </url>
     <url>
          <loc>https://jcorb03.github.io/Engineering-ML-Wiki/getting-started/essence-of-ML/</loc>
-         <lastmod>2025-10-06</lastmod>
+         <lastmod>2025-10-10</lastmod>
+    </url>
+    <url>
+         <loc>https://jcorb03.github.io/Engineering-ML-Wiki/getting-started/neural-networks/</loc>
+         <lastmod>2025-10-10</lastmod>
     </url>
     <url>
          <loc>https://jcorb03.github.io/Engineering-ML-Wiki/getting-started/what-is-ML/</loc>
-         <lastmod>2025-10-06</lastmod>
+         <lastmod>2025-10-10</lastmod>
     </url>
     <url>
          <loc>https://jcorb03.github.io/Engineering-ML-Wiki/home_pages/</loc>
-         <lastmod>2025-10-06</lastmod>
+         <lastmod>2025-10-10</lastmod>
     </url>
     <url>
          <loc>https://jcorb03.github.io/Engineering-ML-Wiki/home_pages/about/</loc>
-         <lastmod>2025-10-06</lastmod>
+         <lastmod>2025-10-10</lastmod>
     </url>
     <url>
          <loc>https://jcorb03.github.io/Engineering-ML-Wiki/home_pages/join-the-team/</loc>
-         <lastmod>2025-10-06</lastmod>
+         <lastmod>2025-10-10</lastmod>
     </url>
     <url>
          <loc>https://jcorb03.github.io/Engineering-ML-Wiki/home_pages/tags/</loc>
-         <lastmod>2025-10-06</lastmod>
+         <lastmod>2025-10-10</lastmod>
     </url>
 </urlset>
